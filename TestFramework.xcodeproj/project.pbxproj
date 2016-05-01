@@ -10,6 +10,7 @@
 		D266A2B01CD5AA9600CBAA52 /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D266A2AF1CD5AA9600CBAA52 /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D266A2B71CD5AA9600CBAA52 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D266A2AC1CD5AA9600CBAA52 /* TestFramework.framework */; };
 		D266A2BC1CD5AA9600CBAA52 /* TestFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D266A2BB1CD5AA9600CBAA52 /* TestFrameworkTests.swift */; };
+		D266A2C71CD5AD6300CBAA52 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D266A2C61CD5AD6300CBAA52 /* TestObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D266A2B61CD5AA9600CBAA52 /* TestFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D266A2BB1CD5AA9600CBAA52 /* TestFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFrameworkTests.swift; sourceTree = "<group>"; };
 		D266A2BD1CD5AA9600CBAA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D266A2C61CD5AD6300CBAA52 /* TestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				D266A2AF1CD5AA9600CBAA52 /* TestFramework.h */,
 				D266A2B11CD5AA9600CBAA52 /* Info.plist */,
+				D266A2C61CD5AD6300CBAA52 /* TestObject.swift */,
 			);
 			path = TestFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					D266A2AB1CD5AA9600CBAA52 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6R6KLHR7Z9;
 					};
 					D266A2B51CD5AA9600CBAA52 = {
 						CreatedOnToolsVersion = 7.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D266A2C71CD5AD6300CBAA52 /* TestObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +315,8 @@
 		D266A2C11CD5AA9600CBAA52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +327,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apargo.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D266A2C21CD5AA9600CBAA52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
