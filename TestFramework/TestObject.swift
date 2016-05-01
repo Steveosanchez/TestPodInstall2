@@ -16,4 +16,8 @@ public class TestObject: NSObject {
     public func testFunction() {
         print("Test in a function")
     }
+    
+    public func testFunctionTwo() {
+        print("Test Function Two")
+    }
 }
