@@ -19,5 +19,7 @@ public class TestObject: NSObject {
     
     public func testFunctionTwo() {
         print("Test Function Two")
+        let newTest: TestObjectTwo = TestObjectTwo()
+        newTest.testInternal()
     }
 }
