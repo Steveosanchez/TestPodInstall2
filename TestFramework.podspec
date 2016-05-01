@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TestFramework"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Test Framework Example"
 
 # This description is used to generate tags and improve search results.
